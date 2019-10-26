@@ -1,0 +1,12 @@
+.pose-frame {
+    background: #ff9558;
+    border: 1px solid #585858;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /*display: inline-block;*/
+    padding: 9px;
+}
+
+.pose-frame-curr {
+
+}
