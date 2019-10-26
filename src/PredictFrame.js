@@ -12,6 +12,8 @@ class PredictFrame extends Component {
     async componentDidMount() {
         let webcam = await tfd.webcam(document.getElementById('webcam'));
         const screenShot = await webcam.capture();
+        // console.log(screenShot);
+        // console.log(screenShot.expandDims(0))
 
         // truncatedMobileNet.predict(screenShot.expandDims(0));
         // screenShot.dispose();
@@ -20,9 +22,12 @@ class PredictFrame extends Component {
         return (
             <div className="webcam-box-outer">
                 <div className="webcam-box-inner">
-                    <video autoPlay playsinline muted id="webcam" width="224" height="224"/>
+                    {/*TEST WORDS*/}
+                    <video autoPlay playsInline muted id="webcam" width="224" height="224"/>
                 </div>
             </div>
         );
     }
 }
+
+export default PredictFrame;
