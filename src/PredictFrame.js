@@ -12,6 +12,7 @@ class PredictFrame extends Component {
     async componentDidMount() {
         let webcam = await tfd.webcam(document.getElementById('webcam'));
         const screenShot = await webcam.capture();
+
         // console.log(screenShot);
         // console.log(screenShot.expandDims(0))
 

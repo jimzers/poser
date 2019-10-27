@@ -16,3 +16,8 @@
     width: 650px;
     height: 450px;
 }
+
+#webcam {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

@@ -12,7 +12,8 @@ class Pose extends Component {
             'touchdown': "./assets/touchdown.jpg",
             'arms_up': "./assets/arms_up.jpg",
             'slant_right': "./assets/slant_right.jpg",
-            'slant_left': "./assets/slant_left.jpg"
+            'slant_left': "./assets/slant_left.jpg",
+            'random': "./assets/random.png"
         };
         this.url_map_sound = {
             'tree_pose': "./assets/middle_a.mp3",
@@ -20,13 +21,17 @@ class Pose extends Component {
             'touchdown': "./assets/middle_c.mp3",
             'arms_up': "./assets/middle_d.mp3",
             'slant_right': "./assets/middle_e.mp3",
-            'slant_left': "./assets/middle_f.mp3"
+            'slant_left': "./assets/middle_f.mp3",
+            'random': "./assets/middle_g.mp3"
         };
     }
     render() {
         return (
             <div className={"pose-frame " + (this.current ? "current" : "")}>
-                    <audio src={require(this.url_map_sound[this.pose_name])} autoPlay/>
+                    <audio autoPlay>
+                        <source src={require(this.url_map_sound[this.pose_name])} type="audio/mpeg" />
+                        Your browser does not support the audio element.
+                    </audio>
                     <img src={require(this.url_map_image[this.pose_name])}  alt={"bruh this image won't load"}/>
             </div>
         )
