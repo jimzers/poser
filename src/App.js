@@ -7,7 +7,14 @@ import PoseQueue from "./PoseQueue";
 class App extends Component {
   render() {
       // ultimately you have all the things in one whole array. then you can constantly cut off the array from the beginning
-      let chicken = [{'name': 'fart', 'current': false},{'name': 'fart', 'current': false}, {'name': 'fart', 'current': false}, {'name': 'fart', 'current': false}, {'name': 'fart', 'current': false}, {'name': 'fart', 'current': false}];
+      let chicken = [
+          {'name': 'arms_up', 'current': false},
+          {'name': 'fart', 'current': false},
+          {'name': 'slant_right', 'current': false},
+          {'name': 't_pose', 'current': false},
+          {'name': 'touchdown', 'current': false},
+          {'name': 'slant_left', 'current': false}
+          ];
       // chicken = [{'name': 'fart', 'current': false},{'name': 'fart', 'current': false}];
     return (
       <div className="App">
@@ -16,7 +23,7 @@ class App extends Component {
               <PredictFrame/>
           </div>
           <div className="pose-queue">
-              <div className={"space"}></div>
+              <div className={"space"}/>
               {/*<Pose name={'fart'} current={true} />*/}
               <PoseQueue pose_q={chicken} />
           </div>
