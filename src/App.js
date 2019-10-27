@@ -4,7 +4,10 @@ import Pose from './Pose'
 import './App.css';
 import PoseQueue from "./PoseQueue";
 
+
 class App extends Component {
+
+
     render() {
         // ultimately you have all the things in one whole array. then you can constantly cut off the array from the beginning
         let chicken = [
@@ -18,7 +21,8 @@ class App extends Component {
         // chicken = [{'name': 'fart', 'current': false},{'name': 'fart', 'current': false}];
         return (
             <div className="App">
-                <div className="Title">Poser</div>
+                {/*<div className="Title">Poser</div>*!/*/}
+                <div> <img src={require("./assets/poser_logo.png")} alt="this is illegal" width="300" height ="140" align="top"></img></div>
                 <div className="webcam-frame">
                     <PredictFrame/>
                 </div>

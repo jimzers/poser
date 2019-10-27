@@ -23,7 +23,7 @@ class PredictFrame extends Component {
             <div className="webcam-box-outer">
                 <div className="webcam-box-inner">
                     {/*TEST WORDS*/}
-                    <video autoPlay playsInline muted id="webcam" width="224" height="224"/>
+                    <video autoPlay playsInline muted id="webcam" width="650" height="450"/>
                 </div>
             </div>
         );
