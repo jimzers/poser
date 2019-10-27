@@ -1,13 +1,16 @@
 .App {
   text-align: center;
   font-size: 50px;
+  background-color:lightblue;
+  border: 35px lightblue;
+  padding: 5px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color:#222;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: lightblue;
 }
 
 .App-intro {
@@ -15,9 +18,13 @@
 }
 
 .space {
-  width: 46.5%;
+  width: 44.5%;
 }
 
 .pose-queue {
   display: flex;
+}
+
+.Title{
+  color:black;
 }
