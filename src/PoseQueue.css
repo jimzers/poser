@@ -1,0 +1,9 @@
+.pose-queue-container {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 50%;
+}

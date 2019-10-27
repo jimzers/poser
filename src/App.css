@@ -13,3 +13,11 @@
 .App-intro {
   font-size: large;
 }
+
+.space {
+  width: 46.5%;
+}
+
+.pose-queue {
+  display: flex;
+}

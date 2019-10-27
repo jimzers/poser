@@ -1,10 +1,11 @@
 .pose-frame {
     margin-right: 10px;
     margin-left: 10px;
+    height: 100%;
 }
 
 .current > img {
-    margin-left: 0;
+
     background: #ff9558;
 }
 
@@ -16,8 +17,8 @@ img {
     box-sizing: border-box;
     /*display: inline-block;*/
     padding: 4px;
-    .current {
-        background: #ff9558;
 
-    }
 }
+.current {
+    margin-left: 0;
+ }
