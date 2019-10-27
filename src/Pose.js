@@ -7,7 +7,12 @@ class Pose extends Component {
         this.pose_name = props.name;
         this.current = props.current;
         this.url_map = {
-            'fart': "./assets/tree-pose.png"
+            'fart': "./assets/tree-pose.png",
+            't_pose': "./assets/t_pose.jpg",
+            'touchdown': "./assets/touchdown.jpg",
+            'arms_up': "./assets/arms_up.jpg",
+            'slant_right': "./assets/slant_right.jpg",
+            'slant_left': "./assets/slant_left.jpg"
         }
     }
     render() {
