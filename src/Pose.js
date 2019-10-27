@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Pose.less';
+import './Pose.css';
 
 class Pose extends Component {
     constructor(props) {
